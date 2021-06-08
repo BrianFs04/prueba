@@ -72,7 +72,7 @@ class FilesController {
         parentId,
       });
     }
-    const dir = process.env.FOLDER_PATH || './tmp/file_manager';
+    const dir = process.env.FOLDER_PATH || 'tmp/file_manager';
     if (!fs.existsSync(dir)) {
       fs.mkdir(dir, (err) => {
         if (err) {
